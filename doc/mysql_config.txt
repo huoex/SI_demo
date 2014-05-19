@@ -1,0 +1,23 @@
+mysql server install configuration
+
+pws:test
+prot:3306
+
+// 登录
+mysql -h localhost -u root -ptest
+
+// 查看有哪些数据库；
+show database;
+
+// 使用哪个库
+use test;
+
+// 建表
+create table user(id varchar(3),name varchar(10));
+
+// 插数，类型要匹配
+insert into user (id,name) values ("001","test01");
+
+// mysql JDBC URL格式如下：
+// jdbc:mysql://[host:port],[host:port].../[database][?参数名1][=参数值1][&参数名2][=参数值2]...
+jdbc:mysql://localhost:3306/test
