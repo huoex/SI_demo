@@ -9,6 +9,7 @@ public class ibatisconfigtest {
 	@Test
 	public void test() {
 		ibatisconfig ic =  new ibatisconfig();
+		// TODO
 //		fail("Not yet implemented");
 	}
 
