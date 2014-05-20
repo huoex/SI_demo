@@ -12,8 +12,9 @@ public class ibatisconfigtest {
 	public void test() {
 		ibatisconfig ic =  new ibatisconfig();
 		try {
-			ArrayList al = (ArrayList) ic.selectAllAccounts();
-			ic.selectAllAccounts();
+			ArrayList al = (ArrayList) ibatisconfig.selectAllAccounts();
+			ibatisconfig.selectAllAccounts();
+			Account ac = ibatisconfig.selectAccountById(1);
 			System.out.println();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -21,6 +22,12 @@ public class ibatisconfigtest {
 		}
 		// TODO
 //		fail("Not yet implemented");
+	}
+
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return super.toString();
 	}
 
 }

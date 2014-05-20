@@ -37,4 +37,20 @@ public class ibatisconfig {
 	public static List selectAllAccounts() throws SQLException {
 		return sqlMapper.queryForList("selectAllAccounts");
 	}
+
+	public static Account selectAccountById(int id) throws SQLException {
+		return (Account) sqlMapper.queryForObject("selectAccountById", id);
+	}
+	
+	public static void insertAccount(Account account) throws SQLException {
+		sqlMapper.insert("insertAccount", account);
+	}
+
+	public static void updateAccount(Account account) throws SQLException {
+		sqlMapper.update("updateAccount", account);
+	}
+
+	public static void deleteAccount(int id) throws SQLException {
+		sqlMapper.delete("deleteAccount", id);
+	}
 }

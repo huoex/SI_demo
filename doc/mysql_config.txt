@@ -19,7 +19,7 @@ create table ACCOUNT(ACC_ID varchar(3),ACC_FIRST_NAME varchar(10),ACC_LAST_NAME 
 // 插数，类型要匹配
 insert into user (id,name) values ("001","test01");
 insert into ACCOUNT (ACC_ID,ACC_FIRST_NAME,ACC_LAST_NAME,ACC_EMAIL) values ("001","zhang","san","zs@163.com");
-
+insert into ACCOUNT (ACC_ID,ACC_FIRST_NAME,ACC_LAST_NAME,ACC_EMAIL) values ("002","li","si","ls@163.com");
 // mysql JDBC URL格式如下：
 // jdbc:mysql://[host:port],[host:port].../[database][?参数名1][=参数值1][&参数名2][=参数值2]...
 jdbc:mysql://localhost:3306/test
