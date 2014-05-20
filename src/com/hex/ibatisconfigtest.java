@@ -20,6 +20,7 @@ public class ibatisconfigtest {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		// todo
 //		fail("Not yet implemented");
 	}
 
