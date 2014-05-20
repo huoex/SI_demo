@@ -1,0 +1,6 @@
+spring+ibatis 需要哪些包
+
+spring 包下载地址
+3.2.9
+spring-framework-3.2.9.RELEASE-dist.zip
+http://maven.springframework.org/release/org/springframework/spring/3.2.9.RELEASE/
