@@ -1,6 +1,17 @@
-spring+ibatis 需要哪些包
+spring+ibatis 锟斤拷要锟斤拷些锟斤拷
 
-spring 包下载地址
+spring 锟斤拷锟斤拷锟截碉拷址
 3.2.9
 spring-framework-3.2.9.RELEASE-dist.zip
 http://maven.springframework.org/release/org/springframework/spring/3.2.9.RELEASE/
+
+
+
+
+<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"        
+         destroy-method="close">       
+     <property name="driverClass" value=" oracle.jdbc.driver.OracleDriver "/>       
+     <property name="jdbcUrl" value=" jdbc:oracle:thin:@localhost:1521:ora9i "/>       
+     <property name="user" value="admin"/>       
+     <property name="password" value="1234"/>       
+bean>  
