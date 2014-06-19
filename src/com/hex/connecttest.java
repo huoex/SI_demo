@@ -17,7 +17,7 @@ public class connecttest {
 		SqlMapClient sql =(SqlMapClient) ac.getBean("sqlMapClient");
 		List ls = sql.queryForList("selectAllAccounts");
 		
-		System.out.println("t");
+		System.out.println("t1");
 //		fail("Not yet implemented");
 	}
 
