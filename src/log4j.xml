@@ -17,4 +17,8 @@
 		<level value="DEBUG"/>
 		<appender-ref ref="ibatis"/>
 	</logger>
+	<logger name="org.springframework" additivity="false">
+		<level value="DEBUG"/>
+		<appender-ref ref="ibatis"/>
+	</logger>
 </log4j:configuration>
