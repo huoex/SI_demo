@@ -15,9 +15,15 @@ public class connecttest {
 	public void test() throws SQLException {
 		ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
 		SqlMapClient sql =(SqlMapClient) ac.getBean("sqlMapClient");
-		List ls = sql.queryForList("selectAllAccounts");
+		List<Account> ls = sql.queryForList("selectAllAccounts");
 		
-		System.out.println("t12");
+		System.out.println(ls);
+		for (Account entity : ls) {
+			System.out.println(entity.getId() + "," + entity.getFirstName()
+					+ "," + entity.getLastName() + ","
+					+ entity.getEmailAddress());
+		}
+		
 //		fail("Not yet implemented");
 	}
 
